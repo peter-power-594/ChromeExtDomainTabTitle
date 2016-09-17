@@ -1,0 +1,13 @@
+{
+  "manifest_version":   2
+, "name":              "Domain Tab Title"
+, "short_name":        "domaintabtit"
+, "description":       "Replace the title of the tab by the location host, excluding www"
+, "version":           "0.1"
+, "permissions":       ["tabs"]
+, "icons": {           "48": "icon_48.png" }
+, "content_scripts":   [{
+                           "matches": ["http://*/*","https://*/*"]
+                         , "js":      ["dtt.js"]
+                       }]
+}
