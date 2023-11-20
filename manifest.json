@@ -1,13 +1,14 @@
 {
-  "manifest_version":   2
-, "name":              "Domain Tab Title"
-, "short_name":        "domaintabtit"
-, "description":       "Replace the title of the tab by the location host, excluding www"
-, "version":           "0.1"
-, "permissions":       ["tabs"]
-, "icons": {           "48": "icon_48.png" }
-, "content_scripts":   [{
-                           "matches": ["http://*/*","https://*/*"]
-                         , "js":      ["dtt.js"]
-                       }]
+	"manifest_version": 3,
+	"name": "Domain Tab Title",
+	"short_name": "domaintabtit",
+	"description": "Set the current tab's domain name as the tab's title.",
+	"version": "1.0.0",
+	"icons": {
+		"48": "icon_48.png"
+	},
+	"content_scripts": [{
+		"matches": [ "http://*/*", "https://*/*" ],
+		"js": [ "dtt.js" ]
+	}]
 }
